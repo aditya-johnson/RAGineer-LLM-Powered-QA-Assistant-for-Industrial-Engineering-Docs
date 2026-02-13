@@ -193,7 +193,8 @@ class VectorStoreManager:
         if not self.embeddings:
             self.embeddings = OpenAIEmbeddings(
                 api_key=EMERGENT_LLM_KEY,
-                base_url="https://llm.emergentagi.com/v1"
+                base_url="https://integrations.emergentagent.com/v1",
+                model="text-embedding-3-small"
             )
         return self.embeddings
     
