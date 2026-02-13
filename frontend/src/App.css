@@ -1,34 +1,121 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* App-specific styles */
+
+/* Message bubbles */
+.message-user {
+  @apply bg-zinc-800 border border-zinc-700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.message-assistant {
+  @apply bg-zinc-900 border border-amber-500/20;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Sidebar active state */
+.sidebar-item-active {
+  @apply bg-amber-500/10 text-amber-500 border-l-2 border-amber-500;
 }
 
-.App-link {
-    color: #61dafb;
+/* Document type badges */
+.badge-sop {
+  @apply bg-emerald-500/20 text-emerald-500;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.badge-manual {
+  @apply bg-sky-500/20 text-sky-500;
+}
+
+.badge-compliance {
+  @apply bg-amber-500/20 text-amber-500;
+}
+
+.badge-other {
+  @apply bg-zinc-500/20 text-zinc-400;
+}
+
+/* Role badges */
+.role-admin {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.role-engineer {
+  @apply bg-amber-500/20 text-amber-500;
+}
+
+.role-technician {
+  @apply bg-emerald-500/20 text-emerald-500;
+}
+
+.role-viewer {
+  @apply bg-zinc-500/20 text-zinc-400;
+}
+
+/* Status indicators */
+.status-online {
+  @apply w-2 h-2 rounded-full bg-emerald-500 animate-pulse;
+}
+
+.status-offline {
+  @apply w-2 h-2 rounded-full bg-zinc-500;
+}
+
+/* Loading bar */
+.loading-bar {
+  @apply h-1 bg-amber-500;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+    margin-left: 0%;
+  }
+  50% {
+    width: 50%;
+    margin-left: 25%;
+  }
+  100% {
+    width: 0%;
+    margin-left: 100%;
+  }
+}
+
+/* Typing indicator */
+.typing-indicator {
+  @apply flex gap-1;
+}
+
+.typing-indicator span {
+  @apply w-2 h-2 bg-amber-500 rounded-full;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Transitions */
+.transition-sidebar {
+  transition: width 0.2s ease-out, padding 0.2s ease-out;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.card-hover:hover {
+  @apply border-amber-500/50;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
 }
