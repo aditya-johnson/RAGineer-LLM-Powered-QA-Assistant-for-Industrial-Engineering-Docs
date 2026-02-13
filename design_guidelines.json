@@ -1,0 +1,161 @@
+{
+  "identity": {
+    "name": "RAGineer",
+    "tagline": "Industrial-Grade QA Intelligence",
+    "mission": "Provide instant, accurate technical answers from engineering documentation with enterprise-grade security and precision.",
+    "emotional_archetype": "The Performance Pro",
+    "tone": "Technical, Reliable, Precise, Secure, 'Control Room' Aesthetic"
+  },
+  "design_system": {
+    "theme_strategy": "Dark Mode First (Industrial Control Room)",
+    "colors": {
+      "palette": {
+        "background": "#09090b",
+        "surface": "#18181b",
+        "surface_highlight": "#27272a",
+        "border": "#27272a",
+        "border_active": "#3f3f46",
+        "primary": "#f59e0b",
+        "primary_foreground": "#000000",
+        "secondary": "#10b981",
+        "secondary_foreground": "#000000",
+        "destructive": "#ef4444",
+        "destructive_foreground": "#ffffff",
+        "text_primary": "#f8fafc",
+        "text_secondary": "#94a3b8",
+        "text_muted": "#52525b",
+        "accent_blue": "#0ea5e9",
+        "accent_purple": "#8b5cf6"
+      },
+      "usage": {
+        "primary": "Use 'Safety Amber' (#f59e0b) for primary actions (Submit, Search, Login). It mimics industrial warning lights.",
+        "secondary": "Use 'Status Emerald' (#10b981) for success states, 'Online' indicators, and safe confirmations.",
+        "destructive": "Use 'Critical Red' (#ef4444) for errors, deletions, and 'Stop' actions.",
+        "background": "Deep Zinc (#09090b) for the main app background. Avoid pure black to reduce eye strain.",
+        "surface": "Lighter Zinc (#18181b) for cards, sidebars, and panels."
+      }
+    },
+    "typography": {
+      "font_family": {
+        "headings": "JetBrains Mono, monospace",
+        "body": "Inter, sans-serif",
+        "code": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl font-bold tracking-tight",
+        "h2": "text-3xl font-semibold tracking-tight",
+        "h3": "text-2xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-normal",
+        "caption": "text-sm text-muted-foreground",
+        "mono_label": "text-xs font-mono uppercase tracking-wider text-muted-foreground"
+      },
+      "rules": "Use JetBrains Mono for all headings, data values, and technical labels. Use Inter for long-form reading (chat responses, documentation). Headings should be uppercase if they are section titles."
+    },
+    "layout": {
+      "grid_system": "Bento Grid Mode B (High Density)",
+      "container_style": "Fluid width with max-w-screen-2xl. Dashboard layout with fixed sidebar and scrollable main content.",
+      "spacing": {
+        "base": "p-4",
+        "section": "p-6",
+        "gap": "gap-4"
+      },
+      "radius": "rounded-sm (2px) or rounded-none. Avoid large rounded corners to maintain a 'manufactured' look."
+    },
+    "components": {
+      "buttons": {
+        "style": "Sharp edges or very slight rounding (rounded-sm). High contrast borders.",
+        "variants": {
+          "default": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_10px_rgba(245,158,11,0.3)]",
+          "outline": "border-border bg-transparent hover:bg-accent hover:text-accent-foreground",
+          "ghost": "hover:bg-accent hover:text-accent-foreground"
+        }
+      },
+      "cards": {
+        "style": "bg-surface border border-border shadow-none. Optional: 'Tech' corners (clip-path) for specific widgets.",
+        "hover": "hover:border-primary/50 transition-colors duration-300"
+      },
+      "inputs": {
+        "style": "bg-background border-border focus:border-primary focus:ring-1 focus:ring-primary rounded-sm font-mono text-sm"
+      },
+      "navigation": {
+        "sidebar": "Fixed left, bg-surface border-r border-border. Icons only on collapse, full text on expand.",
+        "active_state": "bg-primary/10 text-primary border-l-2 border-primary"
+      }
+    },
+    "visual_enhancers": {
+      "scanlines": "Overlay a subtle scanline pattern (repeating linear gradient) on the background with 2% opacity.",
+      "grid_background": "Use a technical grid pattern (1px lines) in the background of the main chat area.",
+      "glow_effects": "Use subtle box-shadow glows (shadow-[0_0_15px_rgba(var(--primary),0.2)]) for active elements.",
+      "status_indicators": "Use pulsing dots (animate-pulse) for 'Live' or 'Processing' states."
+    },
+    "icons": {
+      "library": "Phosphor Icons (React)",
+      "style": "Duotone or Regular",
+      "installation": "yarn add @phosphor-icons/react"
+    },
+    "motion": {
+      "transitions": "transition-all duration-200 ease-out",
+      "micro_interactions": "Hover states should be snappy (150ms). Modal entrances should be smooth (300ms).",
+      "loading": "Use technical loading bars (progress bars) or terminal-style typing effects instead of spinners."
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_engineer",
+        "url": "https://images.unsplash.com/photo-1647884520326-62ff06577dae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMHRhYmxldHxlbnwwfHx8fDE3NzA5NjY4MjV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of engineer using tablet, good for login or landing page context."
+      },
+      {
+        "category": "control_room_context",
+        "url": "https://images.unsplash.com/photo-1749723477636-b40bdfab9477?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxlbmdpbmVlciUyMHRhYmxldHxlbnwwfHx8fDE3NzA5NjY4MjV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Engineer with multiple devices, good for 'About' or 'System' context."
+      }
+    ],
+    "logo_placeholder": "Use a geometric hexagon or gear icon from Phosphor Icons (e.g., <Hexagon weight='duotone' />) combined with the text 'RAGineer'."
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install Phosphor Icons: `yarn add @phosphor-icons/react`",
+      "Install Sonner: `yarn add sonner` (if not present)",
+      "Update `tailwind.config.js` to include the custom colors (Zinc, Amber, Emerald, Red).",
+      "Add `JetBrains Mono` and `Inter` to `index.css` via @import or font link."
+    ],
+    "layout_rules": [
+      "Always use a Sidebar Layout for the main app (Chat, Docs, Admin).",
+      "The Login page should be a centered card on a technical background (grid/scanlines).",
+      "Chat Interface: Message bubbles should be rectangular with slight rounding (rounded-sm). User: Dark Grey, AI: Black/Darker with Amber border/accent.",
+      "Document List: Use a dense Table component (Shadcn Table) with monospace fonts for dates and IDs."
+    ],
+    "component_overrides": [
+      "Shadcn Button: Remove default large radius. Set `rounded-sm`.",
+      "Shadcn Card: Remove heavy shadows. Add `border-border`.",
+      "Shadcn Input: Add `font-mono`."
+    ],
+    "accessibility": [
+      "Ensure all text on the dark background is at least Slate-400 (#94a3b8) or lighter.",
+      "Interactive elements must have a visible focus ring (Amber-500)."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) sparingly - prefer solid technical surfaces for this industrial theme.",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Create new components that match the style and conventions of existing components when needed.",
+    "Examine existing components to understand the project's component patterns before creating new ones.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...}).",
+    "Use `sonner` for toasts. Sonner component are located in `/app/src/components/ui/sonner.tsx`."
+  ]
+}
