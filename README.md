@@ -79,7 +79,7 @@ Built with security in mind, RAGineer implements Role-Based Access Control (RBAC
 | **Backend** | FastAPI, Python 3.11+, LangChain |
 | **Database** | MongoDB (document storage), FAISS (vector search) |
 | **LLM** | OpenAI GPT-5.2 via Emergent LLM Key |
-| **Embeddings** | OpenAI text-embedding-3-small |
+| **Embeddings** | HuggingFace all-MiniLM-L6-v2 (local, air-gapped ready) |
 | **Authentication** | JWT (JSON Web Tokens) |
 
 ---
