@@ -1,0 +1,52 @@
+STANDARD OPERATING PROCEDURE: HYDRAULIC SYSTEM MAINTENANCE
+
+Document ID: SOP-HYD-001
+Version: 2.1
+Effective Date: January 2024
+
+1. PURPOSE
+This SOP establishes the procedures for routine maintenance of hydraulic systems in the manufacturing facility.
+
+2. SCOPE
+Applies to all hydraulic equipment including presses, lifts, and conveyor systems.
+
+3. SAFETY REQUIREMENTS
+- Lock Out/Tag Out (LOTO) must be performed before any maintenance
+- Required PPE: Safety glasses, gloves, steel-toe boots
+- Maximum operating pressure: 3000 PSI
+- Emergency stop button location must be verified before work begins
+
+4. DAILY INSPECTION CHECKLIST
+4.1 Check hydraulic fluid level in reservoir
+4.2 Inspect for leaks at connections and seals
+4.3 Verify pressure gauge readings are within normal range
+4.4 Listen for unusual pump noises
+4.5 Check filter condition indicator
+
+5. WEEKLY MAINTENANCE
+5.1 Test emergency shutdown system
+5.2 Clean or replace air breathers
+5.3 Check accumulator pre-charge pressure
+5.4 Inspect hoses for wear or damage
+
+6. MONTHLY MAINTENANCE
+6.1 Sample and analyze hydraulic fluid
+6.2 Clean heat exchanger fins
+6.3 Calibrate pressure relief valves
+6.4 Inspect cylinder rod seals
+
+7. TROUBLESHOOTING
+7.1 Low Pressure: Check fluid level, filter, pump wear
+7.2 Overheating: Inspect heat exchanger, fluid condition
+7.3 Slow Operation: Check for internal leaks, worn components
+7.4 Noisy Operation: Air in system, cavitation, worn bearings
+
+8. EMERGENCY PROCEDURES
+In case of hydraulic leak:
+- Activate emergency stop immediately
+- Evacuate area if fluid is hot
+- Report to supervisor
+- Do not attempt repairs until system is fully depressurized
+
+Approved by: Chief Engineer
+Review Date: January 2025
