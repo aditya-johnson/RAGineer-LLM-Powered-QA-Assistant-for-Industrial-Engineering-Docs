@@ -191,10 +191,11 @@ class VectorStoreManager:
     
     def get_embeddings(self):
         if not self.embeddings:
-            self.embeddings = OpenAIEmbeddings(
-                api_key=EMERGENT_LLM_KEY,
-                base_url="https://integrations.emergentagent.com/v1",
-                model="text-embedding-3-small"
+            # Use local HuggingFace embeddings for air-gapped deployment simulation
+            self.embeddings = HuggingFaceEmbeddings(
+                model_name="sentence-transformers/all-MiniLM-L6-v2",
+                model_kwargs={'device': 'cpu'},
+                encode_kwargs={'normalize_embeddings': True}
             )
         return self.embeddings
     
